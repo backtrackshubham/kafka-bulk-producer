@@ -18,7 +18,7 @@ export NUM_RECORDS="10000000"
 export MESSAGE='{"userId" : "4c64ecac-921f-48f6-a4ba-2b27a82141a3", "department" : "finance", "salary" : 1000000}'
 ```
 ### Running it
-Its little tedious setting up the kafka, so I got you guys covered you could pull `shuhamknoldus/kafka-container:latest` from docker hub (a docker installation is necessary) a custom kafka container which setup a single node kafka cluster(could also be used in integration tests), once pulling it you could simply run
+Its little tedious setting up the kafka, so I got you guys covered you could pull `shuhamknoldus/kafka-container:latest` from [docker hub](https://hub.docker.com/r/shuhamknoldus) (a docker installation is necessary) a custom kafka container which setup a single node kafka cluster(could also be used in integration tests), once pulling it you could simply run
 
 ```shell script
 docker run --name kafka -d shuhamknoldus/kafka-container:latest

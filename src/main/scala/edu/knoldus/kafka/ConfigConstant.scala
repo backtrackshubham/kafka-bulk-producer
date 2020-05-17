@@ -13,5 +13,19 @@ object ConfigConstant {
     println("\n\n")
     sys.exit(0)
   }
+
+  if(message == ""){
+    println("\n\n")
+    println("Please specify a message to be produced using \n export MESSAGE='{\"userId\" : \"4c64ecac-921f-48f6-a4ba-2b27a82141a3\", \"department\" : \"finance\", \"salary\" : 1000000}'\n")
+    println("\n\n")
+    sys.exit(0)
+  }
+
+  if(topicProduce == ""){
+    println("\n\n")
+    println("Please provide a kafka topic name using \n export TOPIC_PRODUCE=\"TopicName\"\n")
+    println("\n\n")
+    sys.exit(0)
+  }
 }
 
